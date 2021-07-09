@@ -1,0 +1,29 @@
+.radio {
+  display: flex;
+  border-radius: 20px;
+  padding: .3rem;
+  background: #F0F0F3;
+  box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  min-width: 200px;
+  min-height: 40px;
+  user-select: none;
+
+  .option {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .6rem 1.2rem;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+}
